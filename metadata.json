@@ -1,0 +1,6 @@
+{
+  "name": "Ondam Tarot",
+  "description": "Premium tarot consulting service providing professional empathetic counseling and interactive AI tarot readings to soothe your heart.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

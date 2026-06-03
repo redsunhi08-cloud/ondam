@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #513825;
+  --color-primary-deep: #3b2819;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #6b4f3a;
+  --color-on-primary-container: #e9c2a8;
+  --color-inverse-primary: #e5bfa5;
+  --color-secondary: #6d5b48;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #f7dec5;
+  --color-on-secondary-container: #73614d;
+  --color-tertiary: #52390a;
+  --color-gold: #c9a46c;
+  --color-gold-hover: #bda060;
+  
+  --color-brand-bg: #fff8f2;
+  --color-brand-card: #fdf6f0;
+  --color-brand-muted: #81756d;
+  --color-brand-border: #eee7e0;
+  --color-brand-light: #f9f2eb;
+
+  --font-manrope: "Manrope", "Inter", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+@layer utilities {
+  /* Isometric & Tarot card back flipping animations */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}
+
+/* Warm mystical overlay animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(201, 164, 108, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(201, 164, 108, 0.35);
+  }
+}
+
+.ambient-glow {
+  animation: pulseGlow 4s infinite ease-in-out;
+}
+
+body {
+  background-color: #fff8f2;
+  color: #1e1b17;
+  font-family: "Inter", "Manrope", sans-serif;
+}
